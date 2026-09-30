@@ -1,0 +1,29 @@
+{
+  "name": "medienreaktor/neos-studio-image-focal-point-editor",
+  "type": "neos-plugin",
+  "description": "The image focal point editor for Neos Studio: click into the image to set the point that stays visible when it is cropped. Drop-in replacement for the classic-UI JvMTECH.Neos.ImageFocalPointEditor - same editor id, same options, same stored value.",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "neos",
+    "neoscms",
+    "flow",
+    "editor",
+    "image",
+    "focal-point",
+    "neos-studio"
+  ],
+  "require": {
+    "php": "^8.2",
+    "neos/neos": "^9.1",
+    "medienreaktor/neos-studio": "^1.13",
+    "jvmtech/neos-imagefocalpointeditor": "^0.1.1"
+  },
+  "extra": {
+    "neos": {
+      "package-key": "Medienreaktor.NeosStudio.ImageFocalPointEditor"
+    },
+    "branch-alias": {
+      "dev-main": "1.0.x-dev"
+    }
+  }
+}

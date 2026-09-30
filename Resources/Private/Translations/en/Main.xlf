@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Medienreaktor.NeosStudio.ImageFocalPointEditor" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editor.label" xml:space="preserve">
+        <source>Focal point</source>
+      </trans-unit>
+      <trans-unit id="editor.position" xml:space="preserve">
+        <source>x {x} %, y {y} %</source>
+      </trans-unit>
+      <trans-unit id="editor.unset" xml:space="preserve">
+        <source>No focal point set</source>
+      </trans-unit>
+      <trans-unit id="editor.hint" xml:space="preserve">
+        <source>Click into the image or use the arrow keys.</source>
+      </trans-unit>
+      <trans-unit id="editor.noNode" xml:space="preserve">
+        <source>The focal point can be set once the node has been created.</source>
+      </trans-unit>
+      <trans-unit id="editor.noImage" xml:space="preserve">
+        <source>Select an image first.</source>
+      </trans-unit>
+      <trans-unit id="editor.loading" xml:space="preserve">
+        <source>Loading image…</source>
+      </trans-unit>
+      <trans-unit id="editor.loadFailed" xml:space="preserve">
+        <source>The image could not be loaded. Reload the page and try again.</source>
+      </trans-unit>
+      <trans-unit id="editor.invalidValue" xml:space="preserve">
+        <source>The stored value "{raw}" is not a focal point. Set a new one.</source>
+      </trans-unit>
+      <trans-unit id="editor.notConfigured" xml:space="preserve">
+        <source>The focal point editor needs editorOptions.imageProperty.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

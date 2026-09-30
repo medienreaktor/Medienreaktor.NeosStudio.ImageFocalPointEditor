@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Medienreaktor.NeosStudio.ImageFocalPointEditor" source-language="en" datatype="plaintext" target-language="de">
+    <body>
+      <trans-unit id="editor.label" xml:space="preserve">
+        <source>Focal point</source>
+        <target xml:lang="de">Fokuspunkt</target>
+      </trans-unit>
+      <trans-unit id="editor.position" xml:space="preserve">
+        <source>x {x} %, y {y} %</source>
+        <target xml:lang="de">x {x} %, y {y} %</target>
+      </trans-unit>
+      <trans-unit id="editor.unset" xml:space="preserve">
+        <source>No focal point set</source>
+        <target xml:lang="de">Kein Fokuspunkt gesetzt</target>
+      </trans-unit>
+      <trans-unit id="editor.hint" xml:space="preserve">
+        <source>Click into the image or use the arrow keys.</source>
+        <target xml:lang="de">Ins Bild klicken oder die Pfeiltasten nutzen.</target>
+      </trans-unit>
+      <trans-unit id="editor.noNode" xml:space="preserve">
+        <source>The focal point can be set once the node has been created.</source>
+        <target xml:lang="de">Der Fokuspunkt lässt sich setzen, sobald das Element angelegt ist.</target>
+      </trans-unit>
+      <trans-unit id="editor.noImage" xml:space="preserve">
+        <source>Select an image first.</source>
+        <target xml:lang="de">Bitte zuerst ein Bild auswählen.</target>
+      </trans-unit>
+      <trans-unit id="editor.loading" xml:space="preserve">
+        <source>Loading image…</source>
+        <target xml:lang="de">Bild wird geladen …</target>
+      </trans-unit>
+      <trans-unit id="editor.loadFailed" xml:space="preserve">
+        <source>The image could not be loaded. Reload the page and try again.</source>
+        <target xml:lang="de">Das Bild konnte nicht geladen werden. Bitte die Seite neu laden und es erneut versuchen.</target>
+      </trans-unit>
+      <trans-unit id="editor.invalidValue" xml:space="preserve">
+        <source>The stored value "{raw}" is not a focal point. Set a new one.</source>
+        <target xml:lang="de">Der gespeicherte Wert „{raw}“ ist kein gültiger Fokuspunkt. Bitte neu setzen.</target>
+      </trans-unit>
+      <trans-unit id="editor.notConfigured" xml:space="preserve">
+        <source>The focal point editor needs editorOptions.imageProperty.</source>
+        <target xml:lang="de">Der Fokuspunkt-Editor braucht die Option editorOptions.imageProperty.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
