@@ -1,42 +1,21 @@
 /*
  * The shell's Tailwind build only scans the shell's own source, so this plugin
  * ships its own scoped CSS, prefixed `mrfpe-` (MedienReaktor Focal Point
- * Editor). Colours come from the shell's palette, which styles.css emits as
- * `@theme static` custom properties on :root - every one of them with a
- * literal fallback, so the plugin still looks right against an older shell.
- *
- * Light and dark both matter: the shell toggles `.dark` on <html> from the
- * user's UI mode preference, so every surface is declared twice.
+ * Editor). Colours and radii are the shell's semantic tokens (--color-card,
+ * --color-muted-foreground, --radius-md, ...): the shell emits them as custom
+ * properties and switches them with data-theme="light|dark" on <html>, so the
+ * plugin follows the theme without declaring anything twice. Font sizes are
+ * the pixel sizes of the shell's text styles (type-body 13/18, type-small
+ * 11/15), which exist only as utilities, not as variables.
  */
-
-.mrfpe-field,
-.mrfpe-message,
-.mrfpe-placeholder {
-  /* Light */
-  --mrfpe-surface-sunken: var(--color-neutral-50, #f7f7f7);
-  --mrfpe-border: var(--color-neutral-300, #c2c2c2);
-  --mrfpe-text: var(--color-neutral-950, #141414);
-  --mrfpe-muted: var(--color-neutral-600, #545454);
-  --mrfpe-accent: var(--color-blue-500, #00adee);
-  --mrfpe-danger: var(--color-red-500, #ff460d);
-  --mrfpe-radius: 0.25rem;
-}
-
-:where(html.dark) .mrfpe-field,
-:where(html.dark) .mrfpe-message,
-:where(html.dark) .mrfpe-placeholder {
-  --mrfpe-surface-sunken: var(--color-neutral-900, #222222);
-  --mrfpe-border: var(--color-neutral-700, #3f3f3f);
-  --mrfpe-text: #ffffff;
-  --mrfpe-muted: var(--color-neutral-400, #999999);
-}
 
 .mrfpe-field {
   display: flex;
   flex-direction: column;
   gap: 0.375rem;
-  color: var(--mrfpe-text);
-  font-size: 0.875rem;
+  color: var(--color-foreground);
+  font-size: 13px;
+  line-height: 18px;
 }
 
 /* ------------------------------------------------------------------ Image */
@@ -44,9 +23,9 @@
 .mrfpe-area {
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--mrfpe-border);
-  border-radius: var(--mrfpe-radius);
-  background-color: var(--mrfpe-surface-sunken);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-card);
   cursor: crosshair;
   touch-action: none;
   user-select: none;
@@ -56,17 +35,17 @@
 }
 
 .mrfpe-area:hover {
-  border-color: var(--mrfpe-accent);
+  border-color: var(--color-primary);
 }
 
 .mrfpe-area:focus-visible {
   outline: none;
-  border-color: var(--mrfpe-accent);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--mrfpe-accent) 50%, transparent);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-ring) 50%, transparent);
 }
 
 .mrfpe-area[aria-invalid='true'] {
-  border-color: var(--mrfpe-danger);
+  border-color: var(--color-destructive);
 }
 
 .mrfpe-image {
@@ -80,9 +59,9 @@
   position: absolute;
   width: 1.25rem;
   height: 1.25rem;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--color-white);
   border-radius: 9999px;
-  background-color: color-mix(in srgb, var(--mrfpe-accent) 60%, transparent);
+  background-color: color-mix(in srgb, var(--color-primary) 60%, transparent);
   box-shadow:
     0 0 0 1px rgb(0 0 0 / 0.5),
     0 1px 4px rgb(0 0 0 / 0.5);
@@ -109,8 +88,9 @@
 }
 
 .mrfpe-hint {
-  color: var(--mrfpe-muted);
-  font-size: 0.75rem;
+  color: var(--color-muted-foreground);
+  font-size: 11px;
+  line-height: 15px;
 }
 
 /* --------------------------------------------------------------- Messages */
@@ -118,8 +98,9 @@
 .mrfpe-message,
 .mrfpe-placeholder {
   margin: 0;
-  color: var(--mrfpe-muted);
-  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .mrfpe-placeholder {
@@ -127,10 +108,10 @@
   align-items: center;
   justify-content: center;
   min-height: 6rem;
-  border: 1px dashed var(--mrfpe-border);
-  border-radius: var(--mrfpe-radius);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
 }
 
 .mrfpe-message--error {
-  color: var(--mrfpe-danger);
+  color: var(--color-destructive-text);
 }

@@ -111,8 +111,10 @@ shell's single React instance.
   editor does not use any either).
 - There is no "remove focal point" action, as in the classic editor. The
   frontend falls back to the image's centre only while no point was ever set.
-- The editor needs `Medienreaktor.NeosStudio` ≥ 1.13 for the `editors`
-  registry, `useStudio` and `apiFetch`.
+- The editor needs `Medienreaktor.NeosStudio` ≥ 1.19 for its semantic design
+  tokens, which the editor's CSS uses for colours and radii and which follow
+  the light/dark theme (1.13 brought the `editors` registry, `useStudio` and
+  `apiFetch`).
 
 ## License
 
