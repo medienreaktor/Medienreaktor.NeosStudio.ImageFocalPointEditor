@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.1.0] - 2026-11-05
+
 ### Changed
 
 - **The editor takes Neos Studio's design tokens.** The image area, marker and
@@ -27,5 +29,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   same `imageProperty` option (including `parent:`) and the same stored JSON
   value, so existing node type configuration works in Studio unchanged.
 
-[Unreleased]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.1.0...HEAD
+[v1.1.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.0.0...v1.1.0
 [v1.0.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/releases/tag/v1.0.0
