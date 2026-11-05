@@ -1,5 +1,8 @@
 # Medienreaktor.NeosStudio.ImageFocalPointEditor
 
+[![Test Status](https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/actions/workflows/ci.yml/badge.svg)](https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
+
 The image focal point editor for **Neos Studio** (`Medienreaktor.NeosStudio`):
 click into the image to set the point that has to stay visible when the image
 is cropped by its container.
@@ -86,6 +89,10 @@ npm run build        # emits Resources/Public/Plugin/{plugin.js,plugin.css}
 Then flush the Flow caches and reload `/neos/studio`. `npm run dev` rebuilds on
 change.
 
+Run `npm run format` before committing. CI checks the formatting, type-checks
+and builds the plugin against the Neos Studio release `composer.json` requires,
+and fails when the result differs from the committed bundle.
+
 Note: `@medienreaktor/neos-studio` (the type declarations of the Studio plugin
 API) is a `file:` dependency. It is resolved **relative to this package's place
 inside a Neos distribution**, and the committed path assumes the working copy
@@ -111,8 +118,10 @@ shell's single React instance.
   editor does not use any either).
 - There is no "remove focal point" action, as in the classic editor. The
   frontend falls back to the image's centre only while no point was ever set.
-- The editor needs `Medienreaktor.NeosStudio` ≥ 1.13 for the `editors`
-  registry, `useStudio` and `apiFetch`.
+- The editor needs `Medienreaktor.NeosStudio` ≥ 1.19.1 for its semantic design
+  tokens, which the editor's CSS uses for colours and radii and which follow
+  the light/dark theme (1.13 brought the `editors` registry, `useStudio` and
+  `apiFetch`).
 
 ## License
 
