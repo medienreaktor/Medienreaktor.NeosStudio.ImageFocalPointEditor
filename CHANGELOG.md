@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.2.0] - 2026-11-10
+
+### Added
+
+- **Neos Studio 2.** The editor runs in Neos Studio 2 as well as in 1.19.1 and later
+  (`medienreaktor/neos-studio` `^1.19.1 || ^2.0`). It asks the plugin API which
+  version it runs in and takes the node address and the API that come with it:
+  Neos.Api 2 in Studio 2, Medienreaktor.NeosApi 1.x in Studio 1.
+
+### Changed
+
+- The plugin API types come from npm (`@medienreaktor/neos-studio`) instead of a
+  `file:` path into an installed Studio, so the plugin builds anywhere.
+
 ## [v1.1.0] - 2026-11-05
 
 ### Changed
@@ -29,6 +43,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   same `imageProperty` option (including `parent:`) and the same stored JSON
   value, so existing node type configuration works in Studio unchanged.
 
-[Unreleased]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.2.0...HEAD
+[v1.2.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.1.0...v1.2.0
 [v1.1.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.0.0...v1.1.0
 [v1.0.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/releases/tag/v1.0.0

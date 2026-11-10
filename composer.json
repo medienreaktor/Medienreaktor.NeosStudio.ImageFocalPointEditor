@@ -15,7 +15,7 @@
   "require": {
     "php": "^8.2",
     "neos/neos": "^9.1",
-    "medienreaktor/neos-studio": "^1.19.1",
+    "medienreaktor/neos-studio": "^1.19.1 || ^2.0",
     "jvmtech/neos-imagefocalpointeditor": "^0.1.1"
   },
   "require-dev": {
