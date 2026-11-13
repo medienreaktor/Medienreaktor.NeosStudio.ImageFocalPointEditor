@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [v1.2.0] - 2026-11-10
+## [1.2.0] - 2026-11-10
 
 ### Added
 
@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The plugin API types come from npm (`@medienreaktor/neos-studio`) instead of a
   `file:` path into an installed Studio, so the plugin builds anywhere.
 
-## [v1.1.0] - 2026-11-05
+## [1.1.0] - 2026-11-05
 
 ### Changed
 
@@ -34,7 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Requires Neos Studio 1.19.1.
 - The Composer package leaves out the CI configuration.
 
-## [v1.0.0] - 2026-09-30
+## [1.0.0] - 2026-09-30
 
 ### Added
 
@@ -44,6 +44,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   value, so existing node type configuration works in Studio unchanged.
 
 [Unreleased]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.2.0...HEAD
-[v1.2.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.1.0...v1.2.0
-[v1.1.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.0.0...v1.1.0
-[v1.0.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/releases/tag/v1.0.0
+[1.2.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/releases/tag/v1.0.0
