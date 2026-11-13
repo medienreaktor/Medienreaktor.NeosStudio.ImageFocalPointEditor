@@ -1,6 +1,8 @@
 # Medienreaktor.NeosStudio.ImageFocalPointEditor
 
-[![Test Status](https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/actions/workflows/ci.yml/badge.svg)](https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/actions/workflows/ci.yml)
+[![Packagist Version](https://img.shields.io/packagist/v/medienreaktor/neos-studio-image-focal-point-editor)](https://packagist.org/packages/medienreaktor/neos-studio-image-focal-point-editor)
+[![PHP Version Support](https://img.shields.io/packagist/dependency-v/medienreaktor/neos-studio-image-focal-point-editor/php)](https://www.php.net/)
+[![CI](https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/medienreaktor/Medienreaktor.NeosStudio.ImageFocalPointEditor/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
 
 The image focal point editor for **Neos Studio** (`Medienreaktor.NeosStudio`):
